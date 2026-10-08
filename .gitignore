@@ -1,0 +1,11 @@
+node_modules/
+.DS_Store
+.frames/
+.tmp/
+out/
+exports/
+dist/
+*.log
+.env*
+gate*.txt
+*.log

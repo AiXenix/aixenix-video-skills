@@ -1,0 +1,10 @@
+{
+  "name": "aixenix-video",
+  "version": "1.0.0",
+  "description": "10 code-drawn ad video laws (oscilloscope, automaton, chain reaction, shadow, split-flap, watercolor, graffiti, origami, murmuration, ferrofluid) on the procedural-film pipeline with three.js r180.",
+  "author": { "name": "AiXenix", "url": "https://aixenix.com" },
+  "homepage": "https://github.com/AiXenix/aixenix-video-skills",
+  "repository": "https://github.com/AiXenix/aixenix-video-skills",
+  "license": "MIT",
+  "keywords": ["video", "procedural", "three.js", "motion-design", "ads", "skills", "claude-code"]
+}

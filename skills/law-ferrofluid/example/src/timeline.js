@@ -1,0 +1,52 @@
+// «Феррофлюид» — AiXenix ad 10. THE LAW: an invisible force does all the work. A pool of black magnetic
+// fluid on a spun-steel plate; invisible magnets under the plate type every image in Rosensweig spikes.
+// One physical set (src/props.js = the liquid, src/cast.js = the field, camera and lights at global T).
+// 100 bpm, beat 0.6 s = 18 frames, bar 2.4 s = 72 frames; 9 bars = 21.6 s = 648 frames at 30 fps.
+// Bar 9 (19.2–21.6) is a seamless loop of the end card.
+FILM.TIMELINE = {
+  title: 'Феррофлюид — Бизнес на автопилоте',
+  bpm: 100,
+  width: 1920,
+  height: 1080,
+  fps: 30,
+  duration: 21.6,
+  shots: [
+    { id: 'sweep', file: '01-sweep.js', start: 0, end: 2.4, mode: 'none', title: 'Тьма и свет', brief: 'Macro, low: a strip of light rolls over the live black mirror; the field wakes on the beats: 1 spike (0.6), a hexagon of 7 (1.2), 19 (1.8).' },
+    { id: 'hook', file: '02-hook.js', start: 2.4, end: 4.8, mode: 'none', title: 'Невидимая сила', brief: 'Cut high: the liquid swells under «НЕВИДИМАЯ / СИЛА» (sub-critical), then on 2.55 snaps into spikes from the centre out; collapses at 4.74.' },
+    { id: 'pulse', file: '03-pulse.js', start: 4.8, end: 6.6, mode: 'none', title: 'Пульс', brief: 'Heartbeat: lub-dub rings of spikes bloom from the centre twice; ripples run out; a ring stays.' },
+    { id: 'gear', file: '04-gear.js', start: 6.6, end: 8.4, mode: 'none', title: 'Шестерня', brief: 'The ring marches out into gear teeth and six spokes; the field turns it one tick per beat, the spikes ride along.' },
+    { id: 'tagline', file: '05-tagline.js', start: 8.4, end: 10.2, mode: 'none', title: 'Бизнес на автопилоте', brief: 'The pool swells under «БИЗНЕС НА / АВТОПИЛОТЕ», snaps into spikes on 8.7.' },
+    { id: 'hold', file: '06-hold.js', start: 10.2, end: 12.0, mode: 'none', title: 'Автопилот', brief: 'The tagline holds, sharpening on every beat, then slumps back into the mirror.' },
+    { id: 'plane', file: '07-plane.js', start: 12.0, end: 14.4, mode: 'none', title: 'Самолётик', brief: 'A paper plane of spikes glides across the pool leaving a wake, the lattice travelling with the field.' },
+    { id: 'brand', file: '08-brand.js', start: 14.4, end: 16.8, mode: 'none', title: 'AiXenix', brief: '«AiXenix» swells and snaps up on 14.7; a light sweep reveals the etched rim: tagline, aixenix.com, paper dart + t.me/aixenix.' },
+    { id: 'card', file: '09-card.js', start: 16.8, end: 19.2, mode: 'none', title: 'Финал', brief: 'End card holds: AiXenix in spikes, the etched rim readable.' },
+    { id: 'loop', file: '10-loop.js', start: 19.2, end: 21.6, mode: 'none', title: 'Петля', brief: 'Seamless loop bar of the end card: beat snaps, breathing spikes, a periodic glint.' },
+  ],
+  cues: [
+    { t: 0, kind: 'open', note: 'sub swell, sweep' },
+    { t: 0.6, kind: 'prick', note: 'one spike' },
+    { t: 1.2, kind: 'hex', note: 'seven spikes' },
+    { t: 1.8, kind: 'flower', note: 'nineteen spikes' },
+    { t: 2.4, kind: 'swell', note: 'cut; the liquid heaps under the hook' },
+    { t: 2.55, kind: 'hit', note: 'hook snaps into spikes' },
+    { t: 3.6, kind: 'snap' },
+    { t: 4.2, kind: 'snap' },
+    { t: 4.74, kind: 'collapse', note: 'letters slump' },
+    { t: 4.8, kind: 'lub' },
+    { t: 5.1, kind: 'dub' },
+    { t: 6.0, kind: 'lub' },
+    { t: 6.3, kind: 'dub' },
+    { t: 6.6, kind: 'clank', note: 'gear forms' },
+    { t: 7.2, kind: 'tick' },
+    { t: 7.8, kind: 'tick' },
+    { t: 8.4, kind: 'swell', note: 'the pool heaps under the tagline' },
+    { t: 8.7, kind: 'hit', note: 'tagline snaps' },
+    { t: 11.85, kind: 'collapse' },
+    { t: 12.0, kind: 'whoosh', note: 'plane snaps and glides' },
+    { t: 14.4, kind: 'swell', note: 'the pool heaps under AiXenix' },
+    { t: 14.7, kind: 'hit', note: 'AiXenix snaps' },
+    { t: 15.0, kind: 'shimmer', note: 'etch sweep' },
+    { t: 16.8, kind: 'chord', note: 'end card' },
+    { t: 19.2, kind: 'loop', note: 'loop bar' },
+  ],
+};

@@ -1,0 +1,13 @@
+{
+  "name": "aixenix",
+  "owner": { "name": "AiXenix", "url": "https://aixenix.com" },
+  "metadata": { "description": "AiXenix skills for Claude Code" },
+  "plugins": [
+    {
+      "name": "aixenix-video",
+      "source": "./",
+      "description": "10 laws for making ad videos entirely in code: oscilloscope, clockwork automaton, chain reaction, shadow sculpture, split-flap board, watercolour, graffiti, origami, murmuration, ferrofluid.",
+      "category": "productivity"
+    }
+  ]
+}
